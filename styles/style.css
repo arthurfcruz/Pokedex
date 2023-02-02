@@ -1,0 +1,371 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+  
+ol, ul {
+    list-style: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+header {
+    display: flex;
+    border-radius: 0 0 1rem 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(177, 68, 68);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1vw;
+    
+}
+
+header nav {
+    margin-left: 70vw;
+}
+
+header img {
+    height: 5vh;
+    
+}
+
+header a:hover {
+    transition-duration: 0.5s;
+    color: black;
+}
+
+.pokemons {
+    margin-left: 7vw;
+    font-family: 'Roboto', sans-serif;
+    width: 80vw;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.pokemon {
+    text-decoration: none;
+    color: white;
+}
+
+.pokemonCard {
+    float: left;
+    width: 15vw;
+    margin-left: 5vw;
+    height: 26vh;
+    padding: 1vh 0;
+    overflow: hidden;
+    background-color: rgb(62, 61, 61);
+    border-radius: 5vh;
+}
+
+.pokemonCard img {
+    width: 12vw;
+    height: 20vh;
+}
+
+.pokemonCard:hover {
+    height: 31vh;
+    transition-duration: 0.7s;
+    padding: 1%;
+    border: 0.2vh solid rgb(177, 68, 68);
+    -webkit-box-shadow: inset 0px 0px 22px 2px rgba(177,68,68,1);
+    -moz-box-shadow: inset 0px 0px 22px 2px rgba(177,68,68,1);
+    box-shadow: inset 0px 0px 22px 2px rgba(177,68,68,1);
+}
+
+.pokemonCard h2{
+    font-size: 0;
+    margin-bottom: 1vh;
+    background-color: rgb(45, 45, 45);
+    border-radius: 1rem;
+}
+
+.pokemonCard:hover h2 {
+    font-size: 1.7vh;
+}
+
+.pokemonCard h1{
+    margin-bottom: 0.9vh;
+}
+
+.pokemonCard:hover h1{
+    color: rgb(177, 68, 68);
+}
+
+.NavPokedex{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Anterior{
+    margin-left: 5rem;
+    background-color: rgb(62, 61, 61);
+    padding: 1rem;
+    border-radius: .3rem;
+}
+
+.Proximo{
+    margin-right: 5rem;
+    background-color: #d53b47;
+    padding: 1rem;
+    border-radius: .3rem;
+}
+
+.Proximo:hover{
+    transition-duration: 1s;
+    border: solid 1px black;
+}
+
+.Anterior:hover{
+    transition-duration: 1s;
+    border: solid 1px #d53b47;
+    color: #d53b47;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: #FFF;
+    margin-top: 5rem;
+}
+
+#greninja {
+    width: 400px;
+    height: 500px;
+}
+
+.Pokemon{
+    text-align: center;
+    background-color: #403d3d;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    margin-right: 4rem;
+    transition: 0.5s all;
+    display: flex;
+    width: 400px;
+}
+
+.Prop {
+    display: none;
+}
+
+.Pokemon:hover .Prop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s all;
+}
+
+.Pokemon:hover {
+    transition-duration: 1s;
+    width: 1000px;
+    transition-timing-function: linear;
+    transition: 0.5s all;
+}
+
+.GroupProp {
+    display: flex;
+    justify-content: space-around;
+    transition: 0.5s all;
+}
+
+.GroupProp>div>p {
+    font-size: 28px;
+    transition: 0.5s all;
+}
+
+.alter {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d53b47;
+    margin-bottom: 5px;
+    transition: 0.5s all;
+    margin-top: 2rem;
+}
+
+.Prop h2{
+    padding-right: 2rem;
+}
+
+.Pokemon img{
+    object-fit: contain;
+}
+
+.PokeNames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Description{
+    background-color: #2b2a2c;
+    width: 15rem;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PokeInfos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.PokeInfos h1{
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.Status{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.PokeInfosValues{
+    display: flex;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+.PokeInfosValuesHP{
+    display: flex;
+    margin-left: 1.5rem;
+    align-items: center;
+}
+
+.PokeInfosValuesEXP{
+    display: flex;
+    margin-left: 1.2rem;
+    align-items: center;
+}
+
+.PokeInfosValuesDEF{
+    display: flex;
+    margin-left: 1.2rem;
+    align-items: center;
+}
+
+.PokeInfosValues span{
+    padding: .3rem;
+}
+
+.HpGreninja, .EXPGreninja{
+    background-color: #403d3d;
+    padding-left: 14.04rem;
+    border-radius: .3rem;
+    height: 1.4rem;
+    width: 18rem;
+}
+
+.ATKGreninja{
+    background-color: #403d3d;
+    padding-left: 17rem;
+    padding-right: 4.5rem;
+    border-radius: .3rem;
+    width: 17.5rem;
+    height: 1.4rem;
+}
+
+.DEFGreninja{
+    background-color: #403d3d;
+    padding-left: 10rem;
+    margin-right: -2.1rem;
+    border-radius: .3rem;
+    width: 18rem;
+    height: 1.4rem;
+}
+
+.SPDGreninja{
+    background-color: #403d3d;
+    padding-left: 20rem;
+    padding-right: 4.5rem;
+    border-radius: .3rem;
+    width: 18rem;
+    height: 1.4rem;
+}
+
+.BackgroundPokeInfo{
+    background-color: #FFF;
+    height: 1.4rem;
+    border-radius: .1rem .3rem .3rem .1rem;
+    width: 18rem;
+}
+
+.BackgroundPokeInfoATK{
+    background-color: #FFF;
+    height: 1.4rem;
+    width: 14.5rem;
+    border-radius: .1rem .3rem .3rem .1rem;
+}
+
+.BackgroundPokeInfoDEF{
+    background-color: #FFF;
+    height: 1.4rem;
+    width: 20rem;
+    border-radius: .1rem .3rem .3rem .1rem;
+}
+
+.BackgroundPokeInfoSPD{
+    background-color: #FFF;
+    height: 1.4rem;
+    width: 11.5rem;
+    border-radius: .1rem .3rem .3rem .1rem;
+}
+
+.cadastro {
+    height: 50vh;
+    width: 30vw;
+    background-color: rgb(62, 61, 61) ;
+    color: white;
+    display: inline-block;
+    margin-top: 5vh;
+    border-radius: 1vw;
+    box-shadow: 0 5px #999;
+    text-align: center;
+    margin-left: 35vw;
+    margin-right: 35vw;
+}
+
+.designs {
+    margin-top: 2.5vh;
+    font-style: italic;
+}
